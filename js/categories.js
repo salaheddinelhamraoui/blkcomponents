@@ -4191,5 +4191,40 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         }
     });
 
-
+    $('.carousel_4').owlCarousel({
+        items: 4,
+        loop: false,
+        margin: 20,
+        dots: false,
+        lazyLoad: true,
+        navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true
+            },
+            560: {
+                items: 2,
+                nav: false,
+                dots: true
+            },
+            768: {
+                items: 2,
+                nav: false,
+                dots: true
+            },
+            991: {
+                items: 3,
+                nav: true,
+                dots: false
+            },
+            1230: {
+                items: 4,
+                nav: true,
+                dots: false
+            }
+        }
+    });
 })(window.jQuery); 
