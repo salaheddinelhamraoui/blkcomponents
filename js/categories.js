@@ -4166,7 +4166,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
             0: {
                 nav: false,
                 dots: true,
-                items: 1
+                items: 1.75
             },
             480: {
                 nav: false,
@@ -4201,7 +4201,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
         nav: true,
         responsive: {
             0: {
-                items: 1,
+                items: 1.5,
                 nav: false,
                 dots: true
             },

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/categories.css" />
+  </head>
+  <body>
+    <br /><br /><br /><br /><br /><br />
+    <!-- Content -->
+    <section class="contact-us">
+		<div class="hero_single inner_pages background-image" data-background="url(img/home_section_2.jpg)">
+			<div class="opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+				<div class="container">
+                    <div class="main_title center pt-4">
+                        <span><em></em></span>
+                        <h2 class="mt-4 mb-4 text-center">Contact</h2>
+                      </div>
+					<!-- /row -->
+				</div>
+			</div>
+			<div class="wave gray hero"></div>
+		</div>
+		<!-- /hero_single -->
+
+		<div class="bg_gray">
+		    <div class="container margin_60_40">
+		        <div class="row justify-content-center">
+		            <div class="col-lg-4">
+		                <div class="box_contacts">
+		                    <i class="fas fa-life-ring fa-5x"></i>
+		                    <h2>Centre d'aide</h2>
+		                    <a href="#0">06 56 219 217</a>
+		                    <small>Lundi -> dimanche 9:00 - 18:00</small>
+		                </div>
+		            </div>
+		            <div class="col-lg-4">
+		                <div class="box_contacts">
+		                    <i class="fas fa-map-marked-alt fa-5x"></i>
+		                    <h2>Addresse</h2>
+		                    <div>Imm 2 appart 6 etage 1, Lot Cosmos 4</div>
+		                    <small>quartier la villette rue 1, Casablanca</small>
+		                </div>
+		            </div>
+		            <div class="col-lg-4">
+		                <div class="box_contacts">
+		                    <i class="fas fa-envelope-open-text fa-5x"></i>
+		                    <h2>Email</h2>
+		                    <a href="#0">contact@blk.ma</a>
+		                    <small>Lundi -> dimanche 9:00 - 18:00</small>
+		                </div>
+		            </div>
+		        </div>
+		        <!-- /row -->
+		    </div>
+		    <!-- /container -->
+		</div>
+		<!-- /bg_gray -->
+
+		<div class="container margin_60_20">
+		    <div class="main_title center">
+                <span><em></em></span>
+                <h2 class="mt-4 mb-4 text-center">Écrivez-nous</h2>
+              </div>
+		    <div class="row d-flex justify-content-center ">
+		        <div class="col-lg-10 col-md-11 add_bottom_25">
+		            <div id="message-contact"></div>
+			            <form method="post" action="assets/contact.php" id="contactform" autocomplete="off">
+                            <div class="form-group">
+                                <select class="form-control" id="#">
+                                  <option>Je suis un client</option>
+                                  <option>Je suis restaurateur</option>
+                                  <option>Je cherche du travail</option>
+                                </select>
+                              </div>
+			                <div class="form-group">
+			                    <input class="form-control" type="text" placeholder="Nom" id="name_contact" name="name_contact">
+			                </div>
+			                <div class="form-group">
+			                    <input class="form-control" type="email" placeholder="Email" id="email_contact" name="email_contact">
+			                </div>
+			                <div class="form-group">
+			                    <textarea class="form-control" style="height: 150px;" placeholder="Message" id="message_contact" name="message_contact"></textarea>
+			                </div>
+                            <div class="form-group">
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text">Télécharger</span>
+                                    </div>
+                                    <div class="custom-file">
+                                      <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                      <label class="custom-file-label" for="inputGroupFile01">Ajouter un fichier</label>
+                                    </div>
+                                  </div>
+
+			                <div class="form-group">
+			                    <input class="btn custom-contact-btn gradient full-width" type="submit" value="Submit" id="submit-contact">
+			                </div>
+			            </form>
+		        	</div>
+		        </div>
+		    </div>
+		    <!-- /row -->
+		</div>
+		<!-- /container -->
+
+    </section>
+    <br /><br /><br /><br /><br /><br />
+    <script src="js/"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
