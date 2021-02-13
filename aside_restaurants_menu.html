@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/aside_restaurants_menu.css" />
+  </head>
+  <body>
+    <br /><br /><br /><br /><br /><br />
+    <!-- Content -->
+    <div class="row">
+      <div class="col-lg-4" id="sidebar_fixed">
+        <div class="theiaStickySidebar">
+          <div class="box_order mobile_fixed">
+            <div class="head">
+              <h3>Récapitulatif de la commande</h3>
+              <a href="#0" class="close_panel_mobile"
+                ><i class="icon_close"></i
+              ></a>
+            </div>
+            <!-- /head -->
+            <div class="main">
+              <ul class="clearfix">
+                <li><a href="#0">1x Tacos</a><span>40 DH</span></li>
+                <li><a href="#0">2x Jus d'orange</a><span>14 DH</span></li>
+                <li><a href="#0">1x Chawarma poulet</a><span>18 DH</span></li>
+              </ul>
+              <ul class="clearfix">
+                <li>Subtotal<span>72 DH</span></li>
+                <li>Frais de livraison<span>10 DH</span></li>
+                <li class="total">Total<span>82 DH</span></li>
+              </ul>
+
+              <div class="dropdown day">
+                <a href="#" data-toggle="dropdown"
+                  >Day <span id="selected_day"></span
+                ></a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-content">
+                    <h4>Quel jour livré?</h4>
+                    <div class="radio_select chose_day">
+                      <ul>
+                        <li>
+                          <input
+                            type="radio"
+                            id="day_1"
+                            name="day"
+                            value="Today"
+                          />
+                          <label for="day_1">Aujourd'hui</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="day_2"
+                            name="day"
+                            value="Tomorrow"
+                          />
+                          <label for="day_2">Demain</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /people_select -->
+                  </div>
+                </div>
+              </div>
+              <!-- /dropdown -->
+              <div class="dropdown time">
+                <a href="#" data-toggle="dropdown"
+                  >Temps <span id="selected_time"></span
+                ></a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-content">
+                    <div class="radio_select add_bottom_15">
+                      <ul>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_1"
+                            name="time"
+                            value="12.00am"
+                          />
+                          <label for="time_1">12.00</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_2"
+                            name="time"
+                            value="08.30pm"
+                          />
+                          <label for="time_2">12.30</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_3"
+                            name="time"
+                            value="09.00pm"
+                          />
+                          <label for="time_3">1.00</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_4"
+                            name="time"
+                            value="09.30pm"
+                          />
+                          <label for="time_4">1.30</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /time_select -->
+                    <div class="radio_select">
+                      <ul>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_5"
+                            name="time"
+                            value="08.00pm"
+                          />
+                          <label for="time_1">20.00</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_6"
+                            name="time"
+                            value="08.30pm"
+                          />
+                          <label for="time_2">20.30</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_7"
+                            name="time"
+                            value="09.00pm"
+                          />
+                          <label for="time_3">21.00</label>
+                        </li>
+                        <li>
+                          <input
+                            type="radio"
+                            id="time_8"
+                            name="time"
+                            value="09.30pm"
+                          />
+                          <label for="time_4">21.30</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /time_select -->
+                  </div>
+                </div>
+              </div>
+              <!-- /dropdown -->
+              <div class="btn_container_full_width">
+                <a href="order.html" class="btn_2 btn_gradient"
+                  >Commandez maintenant</a
+                >
+                <div class="text-center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /box_order -->
+        <div class="btn_reserve_fixed">
+          <a href="#0" class="btn_1 gradient full-width">View Basket</a>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    >
+    <script src="js/sticky_sidebar.min.js"></script>
+    <script src="js/sticky-kit.min.js"></script>
+    <script src="js/aside_restaurants_menu.js"></script>
+  </body>
+</html>

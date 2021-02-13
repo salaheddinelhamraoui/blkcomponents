@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/aside_restaurants_menu.css" />
+    <link rel="stylesheet" href="css/restaurant_menu.css" />
+  </head>
+  <body data-spy="scroll" data-target="#secondary_nav" data-offset="75">
+    <br /><br /><br /><br /><br /><br />
+    <main>
+      <nav class="secondary_nav sticky_horizontal">
+        <div class="container">
+          <ul id="secondary_nav">
+            <li>
+              <a
+                class="list-group-item list-group-item-action"
+                href="#section-1"
+                >Starters</a
+              >
+            </li>
+            <li>
+              <a
+                class="list-group-item list-group-item-action"
+                href="#section-2"
+                >Main Courses</a
+              >
+            </li>
+            <li>
+              <a
+                class="list-group-item list-group-item-action"
+                href="#section-3"
+                >Desserts</a
+              >
+            </li>
+            <li>
+              <a
+                class="list-group-item list-group-item-action"
+                href="#section-4"
+                >Drinks</a
+              >
+            </li>
+            <li>
+              <a
+                class="list-group-item list-group-item-action"
+                href="#section-5"
+                ><i class="icon_chat_alt"></i>Reviews</a
+              >
+            </li>
+          </ul>
+        </div>
+        <span></span>
+      </nav>
+      <div class="m-5">
+        <div class="row">
+          <div class="col-lg-8 list_menu">
+            <section id="section-1">
+              <h4>Pizza</h4>
+              <div class="table_wrapper">
+                <table class="table cart-list table-striped menu-gallery">
+                  <thead>
+                    <tr>
+                      <th>Article</th>
+                      <th>Prix</th>
+                      <th>Ordre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="img/menu_item_large_1.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/6.jpg"
+                              data-src="/assets/img/6.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>1. Pizza Margarita</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>30.40 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_1_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_1_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_1_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_1_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_1_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_1_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/5.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/5.jpg"
+                              data-src="img/menu-thumb-2.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>2. Pizza végétarienne</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>60.80 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_2_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_2_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_2_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_2_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_2_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_2_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/4.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/4.jpg"
+                              data-src="img/menu-thumb-3.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>3. Pizza Thon</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>50.70 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_3_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_3_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_3_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_3_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_3_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_3_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/3.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/3.jpg"
+                              data-src="img/menu-thumb-4.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>4. Pizza viande hachée</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>40.20 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_4_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_4_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_4_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_4_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_4_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_4_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section id="section-2">
+              <h4>Pizza</h4>
+              <div class="table_wrapper">
+                <table class="table cart-list table-striped menu-gallery">
+                  <thead>
+                    <tr>
+                      <th>Article</th>
+                      <th>Prix</th>
+                      <th>Ordre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="img/menu_item_large_1.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/6.jpg"
+                              data-src="/assets/img/6.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>1. Pizza Margarita</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>30.40 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_1_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_1_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_1_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_1_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_1_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_1_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/5.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/5.jpg"
+                              data-src="img/menu-thumb-2.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>2. Pizza végétarienne</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>60.80 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_2_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_2_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_2_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_2_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_2_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_2_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/4.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/4.jpg"
+                              data-src="img/menu-thumb-3.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>3. Pizza Thon</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>50.70 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_3_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_3_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_3_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_3_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_3_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_3_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/3.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/3.jpg"
+                              data-src="img/menu-thumb-4.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>4. Pizza viande hachée</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>40.20 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_4_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_4_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_4_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_4_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_4_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_4_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+            <section id="section-3">
+              <h4>Pizza</h4>
+              <div class="table_wrapper">
+                <table class="table cart-list menu-gallery">
+                  <thead>
+                    <tr>
+                      <th>Article</th>
+                      <th>Prix</th>
+                      <th>Ordre</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="img/menu_item_large_1.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/6.jpg"
+                              data-src="/assets/img/6.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>1. Pizza Margarita</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>30.40 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_1_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_1_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_1_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_1_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_1_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_1_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/5.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/5.jpg"
+                              data-src="img/menu-thumb-2.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>2. Pizza végétarienne</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>60.80 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_2_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_2_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_2_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_2_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_2_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_2_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/4.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/4.jpg"
+                              data-src="img/menu-thumb-3.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>3. Pizza Thon</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>50.70 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_3_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_3_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_3_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_3_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_3_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_3_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="d-md-flex align-items-center">
+                        <figure>
+                          <a
+                            href="/assets/img/3.jpg"
+                            title="Photo title"
+                            data-effect="mfp-zoom-in"
+                            ><img
+                              src="/assets/img/3.jpg"
+                              data-src="img/menu-thumb-4.jpg"
+                              alt="thumb"
+                              class="lazy"
+                          /></a>
+                        </figure>
+                        <div class="flex-md-column">
+                          <h4>4. Pizza viande hachée</h4>
+                        </div>
+                      </td>
+                      <td>
+                        <strong>40.20 DH</strong>
+                      </td>
+                      <td class="options">
+                        <div
+                          class="dropdown dropdown-options keep-inside-clicks-open"
+                        >
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-expanded="true"
+                            ><i class="fas fa-plus"></i
+                          ></a>
+                          <div class="dropdown-menu">
+                            <h5>Quantité</h5>
+                            <div class="numbers-row">
+                              <input
+                                type="text"
+                                value="1"
+                                id="qty_1"
+                                class="qty2 form-control"
+                                name="quantity"
+                              />
+                              <div class="inc button_inc">+</div>
+                              <div class="dec button_inc">-</div>
+                            </div>
+                            <h5>Sélectionner une option</h5>
+                            <ul class="clearfix">
+                              <li>
+                                <input
+                                  id="check_option_4_1"
+                                  type="radio"
+                                  value="option1"
+                                  name="options_1"
+                                  checked
+                                />
+                                <label
+                                  for="check_option_4_1"
+                                  class="container_radio"
+                                  >Moyenne<small>+ 10.50 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_4_2"
+                                  type="radio"
+                                  value="option2"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_4_2"
+                                  class="container_radio"
+                                  >Grande<small>+ 15.00 DH</small>
+                                </label>
+                              </li>
+                              <li>
+                                <input
+                                  id="check_option_4_3"
+                                  type="radio"
+                                  value="option3"
+                                  name="options_1"
+                                />
+                                <label
+                                  for="check_option_4_3"
+                                  class="container_radio"
+                                  >Extra Grande<small>+ 30 DH</small>
+                                </label>
+                              </li>
+                            </ul>
+                            <a href="#0" class="btn btn-light"
+                              >Ajouter au panier</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-4" id="sidebar_fixed">
+            <div class="theiaStickySidebar">
+              <div id="mobile_fixed_card" class="box_order mobile_fixed">
+                <div class="head">
+                  <h3>Votre commande
+
+                </h3>
+                  <a id="close_mobile_card" href="#0" class="close_panel_mobile"
+                    ><i class="fas fa-times"></i
+                  ></a>
+                </div>
+                <!-- /head -->
+                <div class="main_menu_page">
+                  <ul class="clearfix">
+                    <li><a href="#0">1x Tacos</a><span>40 DH</span></li>
+                    <li><a href="#0">2x Jus d'orange</a><span>14 DH</span></li>
+                    <li>
+                      <a href="#0">1x Chawarma poulet</a><span>18 DH</span>
+                    </li>
+                  </ul>
+                  <ul class="clearfix">
+                    <li>Subtotal<span>72 DH</span></li>
+                    <li>Frais de livraison<span>10 DH</span></li>
+                    <li class="total">Total<span>82 DH</span></li>
+                  </ul>
+
+                  <div class="dropdown day">
+                    <a href="#" data-toggle="dropdown"
+                      >Day <span id="selected_day"></span
+                    ></a>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu-content">
+                        <h4>Quel jour livré?</h4>
+                        <div class="radio_select chose_day">
+                          <ul>
+                            <li>
+                              <input
+                                type="radio"
+                                id="day_1"
+                                name="day"
+                                value="Today"
+                              />
+                              <label for="day_1">Aujourd'hui</label>
+                            </li>
+                            <li>
+                              <input
+                                type="radio"
+                                id="day_2"
+                                name="day"
+                                value="Tomorrow"
+                              />
+                              <label for="day_2">Demain</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /people_select -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /dropdown -->
+                  <div class="dropdown time">
+                    <a href="#" data-toggle="dropdown"
+                      >Temps <span id="selected_time"></span
+                    ></a>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu-content">
+                        <div class="radio_select add_bottom_15">
+                          <ul>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_1"
+                                name="time"
+                                value="12.00am"
+                              />
+                              <label for="time_1">12.00</label>
+                            </li>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_2"
+                                name="time"
+                                value="08.30pm"
+                              />
+                              <label for="time_2">12.30</label>
+                            </li>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_3"
+                                name="time"
+                                value="09.00pm"
+                              />
+                              <label for="time_3">1.00</label>
+                            </li>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_4"
+                                name="time"
+                                value="09.30pm"
+                              />
+                              <label for="time_4">1.30</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /time_select -->
+                        <div class="radio_select">
+                          <ul>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_5"
+                                name="time"
+                                value="08.00pm"
+                              />
+                              <label for="time_1">20.00</label>
+                            </li>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_6"
+                                name="time"
+                                value="08.30pm"
+                              />
+                              <label for="time_2">20.30</label>
+                            </li>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_7"
+                                name="time"
+                                value="09.00pm"
+                              />
+                              <label for="time_3">21.00</label>
+                            </li>
+                            <li>
+                              <input
+                                type="radio"
+                                id="time_8"
+                                name="time"
+                                value="09.30pm"
+                              />
+                              <label for="time_4">21.30</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- /time_select -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /dropdown -->
+                  <div class="btn_container_full_width">
+                    <a href="#0" class="btn_2 btn_gradient"
+                      >Commandez maintenant</a
+                    >
+                    <div class="text-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /box_order -->
+            <div class="btn_reserve_fixed btn_container_full_width">
+              <a id="view_card" href="#0" class="btn_2 btn_gradient"
+                >Voir Le Panier</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Content -->
+    <br /><br /><br /><br /><br /><br />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/sticky_sidebar.min.js"></script>
+    <script src="js/sticky-kit.min.js"></script>
+    <script src="js/restaurant_menu.js"></script>
+    <script src="js/aside_restaurants_menu.js"></script>
+    <script src="js/restaurants_menu_full_page.js"></script>
+  </body>
+</html>
