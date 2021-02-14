@@ -53,6 +53,9 @@
             total_local = subTotal_local + deliveryFee;
             subTotal.innerText = subTotal_local + " DH";
             total.innerText = total_local + " DH";
+            total.innerHTML = total_local + " DH";
+
+
 
         }
     });
