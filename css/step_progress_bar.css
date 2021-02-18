@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #ef4c8d;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #ef4c8d;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #ef4c8d
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 16%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+}
+
+#progressbar #chercher:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002"
+}
+
+#progressbar #restaurant:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f2e7"
+}
+
+#progressbar #commande:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f25a"
+}
+
+#progressbar #paiement:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f07a"
+}
+
+#progressbar #confirm:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c"
+}
+
+#progressbar #recu:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f02f"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #ef4c8d
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #ef4c8d
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
