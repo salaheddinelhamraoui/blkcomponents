@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.profile_section i {
+    color: #ef4c8d;
+}
+
+.profile_section li a {
+    color: #495057;
+    background: #fdfdfd;
+    ;
+}
+
+.profile_section li {
+    background: #FFF;
+}
+
+.profile_section .nav-link.active {
+    color: #ef4c8d;
+    background: #fdfdfd;
+}
+
+.profile_section .profile_img {
+    width: 50%;
+    height: auto;
+    display: block;
+    background: #FFF;
+    padding: 22px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    border-color: #f4f4f4;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.container.profile_section {
+    background: #fdfdfd;
+}
+
+.profile_section figure .delete_icon {
+    background: #fff;
+    padding: 7px;
+    border-radius: 19px;
+}
+
+.profile_section figure .delete_icon_container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

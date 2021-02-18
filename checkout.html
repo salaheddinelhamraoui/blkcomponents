@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/categories.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+  </head>
+  <body>
+    <br /><br /><br /><br /><br /><br />
+    <div class="container profile_section">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-12">
+          <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#compte"
+                role="tab"
+                aria-controls="compte"
+                aria-selected="true"
+              >
+                <i class="fas fa-user-circle"></i> Compte</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-toggle="tab"
+                href="#Adresses"
+                role="tab"
+                aria-controls="Adresses"
+                aria-selected="false"
+              >
+                <i class="fas fa-map-marker-alt"></i> Adresses</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#commandes"
+                role="tab"
+                aria-controls="commandes"
+                aria-selected="false"
+              >
+                <i class="fas fa-shopping-basket"></i> Commandes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#favoris"
+                role="tab"
+                aria-controls="favoris"
+                aria-selected="false"
+                ><i class="fab fa-gratipay"></i> Favoris</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://demo.blkfood.app/mypoints"
+                ><i class="fas fa-crown"></i> Mes points</a
+              >
+            </li>
+          </ul>
+
+          <div class="tab-content mt-3">
+            <div
+              class="tab-pane"
+              id="compte"
+              role="tabpanel"
+              aria-labelledby="duck-tab"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                  <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center">
+                      <div
+                        class="form-group d-flex flex-column align-items-center"
+                      >
+                        <label for="inputimg "
+                          >Modifiez votre photo de profil
+                        </label>
+
+                        <img
+                          class="profile_img"
+                          src="./assets/img/user.png"
+                          alt=""
+                        />
+                      </div>
+                      <label class="import_img" for="test"
+                        ><a href="#0">Import</a>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Prénom</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="inputEmail4"
+                          placeholder="Prénom"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Nom</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputPassword4"
+                          placeholder="Nom"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputAddress"
+                        placeholder="email"
+                      />
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Mot de passe </label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputEmail4"
+                          placeholder="Mot de passe"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4"
+                          >Confirmation du mot de passe
+                        </label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputPassword4"
+                          placeholder="Mot de passe"
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-4">
+                      Enregistrer
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane active"
+              id="Adresses"
+              role="tabpanel"
+              aria-labelledby="Adresses"
+            >
+              <h3 class="mt-5">Vos dernières commandes</h3>
+              <div
+                id="table_list_wrapper"
+                class="dataTables_wrapper"
+                role="grid"
+              >
+                <div
+                  id="table_list_processing"
+                  class="dataTables_processing"
+                  style="visibility: hidden"
+                >
+                  <p>Chargement... <i class="fa fa-spinner fa-spin"></i></p>
+                </div>
+                <table
+                  id="table_list"
+                  class="table table-striped dataTable"
+                  aria-describedby="table_list_info"
+                >
+                  <thead>
+                    <tr role="row">
+                      <th
+                        width="40%"
+                        class="sorting_asc"
+                        role="columnheader"
+                        tabindex="0"
+                        aria-controls="table_list"
+                        rowspan="1"
+                        colspan="1"
+                        style="width: 40px"
+                        aria-sort="ascending"
+                        aria-label="Adresse: activate to sort column descending"
+                      >
+                        Adresse
+                      </th>
+                      <th
+                        class="sorting"
+                        role="columnheader"
+                        tabindex="0"
+                        aria-controls="table_list"
+                        rowspan="1"
+                        colspan="1"
+                        style="width: 0px"
+                        aria-label="Nom de cette localisation: activate to sort column ascending"
+                      >
+                        Nom de cette localisation
+                      </th>
+                      <th
+                        class="sorting"
+                        role="columnheader"
+                        tabindex="0"
+                        aria-controls="table_list"
+                        rowspan="1"
+                        colspan="1"
+                        style="width: 0px"
+                        aria-label="Par défaut: activate to sort column ascending"
+                      >
+                        Par défaut
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody role="alert" aria-live="polite" aria-relevant="all">
+                    <tr class="odd">
+                      <td class="sorting_1">
+                        AGADIR AGADIR AGADIR
+                        <div class="options">
+                          <a href="/profile?tab=2&amp;do=add&amp;id=3748"
+                            ><i class="ion-ios-compose-outline"></i
+                          ></a>
+                          <a
+                            href="javascript:;"
+                            class="delete_addressbook"
+                            data-id="3748"
+                            ><i class="ion-ios-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                      <td class=""></td>
+                      <td class=""><i class="fa fa-times"></i></td>
+                    </tr>
+                    <tr class="even">
+                      <td class="sorting_1">
+                        Boulevard Mohammed VI Mohammedia Casablanca-Settat
+                        <div class="options">
+                          <a href="/profile?tab=2&amp;do=add&amp;id=3796"
+                            ><i class="ion-ios-compose-outline"></i
+                          ></a>
+                          <a
+                            href="javascript:;"
+                            class="delete_addressbook"
+                            data-id="3796"
+                            ><i class="ion-ios-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                      <td class="">IMA. orchidees 3 imm C appart 10</td>
+                      <td class=""><i class="fa fa-times"></i></td>
+                    </tr>
+                    <tr class="odd">
+                      <td class="sorting_1">
+                        Mohammédia Maroc Grand Casablanca
+                        <div class="options">
+                          <a href="/profile?tab=2&amp;do=add&amp;id=3879"
+                            ><i class="ion-ios-compose-outline"></i
+                          ></a>
+                          <a
+                            href="javascript:;"
+                            class="delete_addressbook"
+                            data-id="3879"
+                            ><i class="ion-ios-trash"></i
+                          ></a>
+                        </div>
+                      </td>
+                      <td class="">
+                        IMA. LES ORCHIDEES 2 IMM C NUMERO 8. 2eme etage
+                      </td>
+                      <td class=""><i class="fa fa-times"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div
+              class="tab-pane"
+              id="commandes"
+              role="tabpanel"
+              aria-labelledby="commandes"
+            >
+              <h3 class="mt-5 mb-5">Vos dernières commandes</h3>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">produit</th>
+                    <th scope="col">TOTAL</th>
+                    <th scope="col">Mode de paiement</th>
+                    <th scope="col">Statut</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">13536</th>
+                    <td>Tacos Au Charbon</td>
+                    <td>60.00 DH</td>
+                    <td>Cash à la livraison</td>
+                    <td>successful</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12537</th>
+                    <td>Tacos Au Charbon</td>
+                    <td>70.00 DH</td>
+                    <td>Cash à la livraison</td>
+                    <td>successful</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">13538</th>
+                    <td>Tacos Au Charbon</td>
+                    <td>80.00 DH</td>
+                    <td>Cash à la livraison</td>
+                    <td>successful</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane"
+              id="favoris"
+              role="tabpanel"
+              aria-labelledby="favoris"
+            >
+              <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="item">
+                    <div class="strip">
+                      <figure>
+                        <img
+                          src="assets/img/1.jpg"
+                          data-src="assets/img/1.jpg"
+                          class="owl-lazy"
+                          alt=""
+                        />
+                        <a href="detail-restaurant.html" class="strip_info">
+                          <small>Poulet</small>
+                          <div class="item_title">
+                            <h3>Riad Chicken</h3>
+                            <small
+                              ><i class="fas fa-map-marker-alt"></i>
+                              Mohammedia
+                            </small>
+                            <div class="delete_icon_container">
+                              <i class="far fa-trash-alt delete_icon"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                      <ul>
+                        <li><span class="loc_open">Ouvert</span></li>
+                        <li>
+                          <div class="score">
+                            <span>BLKFOOD<em>350 Reviews</em></span
+                            ><strong>8.9</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="item">
+                    <div class="strip">
+                      <figure>
+                        <img
+                          src="assets/img/2.jpg"
+                          data-src="assets/img/1.jpg"
+                          class="owl-lazy"
+                          alt=""
+                        />
+                        <a href="detail-restaurant.html" class="strip_info">
+                          <small>Poulet</small>
+                          <div class="item_title">
+                            <h3>Riad Chicken</h3>
+                            <small
+                              ><i class="fas fa-map-marker-alt"></i>
+                              Mohammedia
+                            </small>
+                            <div class="delete_icon_container">
+                              <i class="far fa-trash-alt delete_icon"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                      <ul>
+                        <li><span class="loc_open">Ouvert</span></li>
+                        <li>
+                          <div class="score">
+                            <span>BLKFOOD<em>350 Reviews</em></span
+                            ><strong>8.9</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="item">
+                    <div class="strip">
+                      <figure>
+                        <img
+                          src="assets/img/3.jpg"
+                          data-src="assets/img/1.jpg"
+                          class="owl-lazy"
+                          alt=""
+                        />
+                        <a href="detail-restaurant.html" class="strip_info">
+                          <small>Poulet</small>
+                          <div class="item_title">
+                            <h3>Riad Chicken</h3>
+                            <small
+                              ><i class="fas fa-map-marker-alt"></i>
+                              Mohammedia
+                            </small>
+                            <div class="delete_icon_container">
+                              <i class="far fa-trash-alt delete_icon"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                      <ul>
+                        <li><span class="loc_open">Ouvert</span></li>
+                        <li>
+                          <div class="score">
+                            <span>BLKFOOD<em>350 Reviews</em></span
+                            ><strong>8.9</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="item">
+                    <div class="strip">
+                      <figure>
+                        <img
+                          src="assets/img/4.jpg"
+                          data-src="assets/img/1.jpg"
+                          class="owl-lazy"
+                          alt=""
+                        />
+                        <a href="detail-restaurant.html" class="strip_info">
+                          <small>Poulet</small>
+                          <div class="item_title">
+                            <h3>Riad Chicken</h3>
+                            <small
+                              ><i class="fas fa-map-marker-alt"></i>
+                              Mohammedia
+                            </small>
+                            <div class="delete_icon_container">
+                              <i class="far fa-trash-alt delete_icon"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                      <ul>
+                        <li><span class="loc_open">Ouvert</span></li>
+                        <li>
+                          <div class="score">
+                            <span>BLKFOOD<em>350 Reviews</em></span
+                            ><strong>8.9</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="item">
+                    <div class="strip">
+                      <figure>
+                        <img
+                          src="assets/img/5.jpg"
+                          data-src="assets/img/1.jpg"
+                          class="owl-lazy"
+                          alt=""
+                        />
+                        <a href="detail-restaurant.html" class="strip_info">
+                          <small>Poulet</small>
+                          <div class="item_title">
+                            <h3>Riad Chicken</h3>
+                            <small
+                              ><i class="fas fa-map-marker-alt"></i>
+                              Mohammedia
+                            </small>
+                            <div class="delete_icon_container">
+                              <i class="far fa-trash-alt delete_icon"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                      <ul>
+                        <li><span class="loc_open">Ouvert</span></li>
+                        <li>
+                          <div class="score">
+                            <span>BLKFOOD<em>350 Reviews</em></span
+                            ><strong>8.9</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="item">
+                    <div class="strip">
+                      <figure>
+                        <img
+                          src="assets/img/6.jpg"
+                          data-src="assets/img/1.jpg"
+                          class="owl-lazy"
+                          alt=""
+                        />
+                        <a href="detail-restaurant.html" class="strip_info">
+                          <small>Poulet</small>
+                          <div class="item_title">
+                            <h3>Riad Chicken</h3>
+                            <small
+                              ><i class="fas fa-map-marker-alt"></i>
+                              Mohammedia
+                            </small>
+                            <div class="delete_icon_container">
+                              <i class="far fa-trash-alt delete_icon"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </figure>
+                      <ul>
+                        <li><span class="loc_open">Ouvert</span></li>
+                        <li>
+                          <div class="score">
+                            <span>BLKFOOD<em>350 Reviews</em></span
+                            ><strong>8.9</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+    <br /><br /><br /><br /><br /><br />
+    <script src="js/"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

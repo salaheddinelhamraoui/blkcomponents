@@ -53,12 +53,22 @@
             total_local = subTotal_local + deliveryFee;
             subTotal.innerText = subTotal_local + " DH";
             total.innerText = total_local + " DH";
-            total.innerHTML = total_local + " DH";
 
 
 
         }
     });
+
+
+    var i;
+    for (i = 1; i < 4; i++) {
+        let menuSection = document.getElementById("section-" + i);
+        console.log(menuSection);
+    }
+
+
+
+
 
 
 
